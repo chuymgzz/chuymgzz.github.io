@@ -1,0 +1,277 @@
+/**
+ * This is the code for the body
+ */
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/**
+ * This is the code for the header
+ */
+
+.container-header {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.mainHeader {
+    padding: 2.5em 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.align-flex {
+    display: -webkit-box;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-flex.between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.align-flex.vertical:not(.is-column) {
+    -webkit-box-align: center;
+    -ms-grid-row-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+}
+
+.mainNav a {
+    color: #fff;
+    font-weight: 500;
+}
+
+.mainNav a+a {
+    padding-left: 1em;
+}
+
+/**
+ * This is the code for the section 1
+ */
+
+ .intro {
+    background-color: #16a13a;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.panels .panel {
+    height: 100%;
+}
+
+.row {
+    display: block;
+}
+
+.align-flex.center {
+    -webkit-box-align: center;
+    -ms-grid-row-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.img {
+    -webkit-animation: a 1s ease infinite alternate;
+    animation: a 1s ease infinite alternate;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.avatar {
+    width: 350px;
+    height: 350px;
+    display: inline-flex;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px #ccc;
+    float: bottom;
+ }
+
+ .a {
+    background-image: url(/Users/jesusgonzalez/Desktop/pruebaLanding/images/yo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+
+@-webkit-keyframes a {
+    0% {
+        -webkit-transform: translateY(-1em) rotate(0deg);
+        transform: translateY(0em) rotate(0deg);
+    }
+    to {
+        -webkit-transform: translateY(1em) rotate(0deg);
+        transform: translateY(1em) rotate(0deg);
+    }
+}
+
+.fadein {
+    -webkit-animation: a .3s ease forwards;
+    animation: a .3s ease forwards;
+}
+
+.container-text {
+    width: 30%;
+    margin-bottom: 0px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 85px;
+    margin-bottom: 0px;
+}
+
+.intro__subtitle {
+    color: #fff;
+    font-weight: 600;
+    align-content: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: .2em 0;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .3);
+    text-transform: uppercase;
+}
+
+.intro__desc {
+    color: hsla(0, 0%, 100%, .8);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.align.center {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.intro__actions {
+    padding: 1em 0;
+}
+
+.btn {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    color: #000000;
+    font-weight: 600;
+    padding: 1em;
+}
+
+.btn.invert {
+    background: #fff;
+    color: #000;
+}
+
+.intro__link {
+    color: #fff;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0 1em;
+}
+
+.social__icon {
+    color: #fff;
+}
+
+.social__icon+.social__icon {
+    margin-left: .5em;
+}
+
+/**
+ * This is the code for section 2 (projects)
+ */
+
+#project-container {
+    background-color: #e7e7e7;
+    background-position: 100%;
+    height: 40vh;
+}
+
+.project-division {
+    padding: 0.3em 0;
+    background-position: 100%;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.project {
+    position: relative;
+    top: 10px;
+    left: 25px;
+}
+
+.project-btn {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    color: #000000;
+    font-weight: 600;
+    padding: 1em;
+    position: relative;
+}
+
+.intro__actions {
+    padding: 1em 0;
+}
+
+.btn.invert {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ * This is the code for the footer
+ */
+
+ .mainFooter {
+    border-top: 1px solid hsla(0, 0%, 100%, .1);
+    bottom: 0;
+    color: hsla(0, 0%, 100%, .5);
+    padding: 1em 0;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+}
+
+.container-footer {
+    margin: 0 auto;
+    width: 90%;
+}
